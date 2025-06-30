@@ -1,1 +1,1 @@
-# leetcode-problem-2025
+# leetcode-problems-2025
