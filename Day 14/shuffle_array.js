@@ -41,3 +41,5 @@ const nums = [2, 5, 1, 3, 4, 7],
   n = 3;
 console.log(shuffle(nums, n));
 // Output: [2,3,5,4,1,7]
+// Time Complexity: O(n)
+// Space Complexity: O(n)
