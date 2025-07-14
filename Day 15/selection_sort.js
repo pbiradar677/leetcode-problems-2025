@@ -12,3 +12,6 @@ function selectionSort(nums) {
 }
 const nums = [20, 12, 10, 15, 2];
 console.log(selectionSort(nums));
+
+// Time Complexity: O(n^2)
+// Space Complexity: O(1)
