@@ -63,7 +63,7 @@ const reverseWords = function (s) {
   return reverse + word;
 };
 // Input:
-const s = "a   good  example";
+const s = "the sky is blue";
 console.log(reverseWords(s));
 // Output: "blue is sky the"
 // Time Complexity: O(n)
