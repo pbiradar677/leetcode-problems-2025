@@ -59,4 +59,4 @@ const reverseList = function (head) {
   return newHead;
 };
 // Time Complexity: O(n)
-// Time Complexity: O(n)
+// Space Complexity: O(n)
