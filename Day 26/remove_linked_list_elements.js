@@ -46,5 +46,21 @@ const removeElements = function (head, val) {
   }
   return head;
 };
+
+// const removeElements = function (head, val) {
+//   const dummy = new ListNode(-1);
+//   dummy.next = head;
+//   let curr = dummy;
+
+//   while (curr.next !== null) {
+//     if (curr.next.val === val) {
+//       curr.next = curr.next.next; // skip the node
+//     } else {
+//       curr = curr.next; // move forward
+//     }
+//   }
+
+//   return dummy.next;
+// };
 // Time Complexity: O(n)
 // Space Complexity: O(1)
