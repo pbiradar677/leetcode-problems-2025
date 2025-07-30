@@ -254,6 +254,26 @@ class MyLinkedList {
     }
     return false;
   }
+  // [Symbol.iterator]() {
+  //   let current = this.#head; // Start from the head every time
+  //   return {
+  //     next() {
+  //       if (current) {
+  //         const value = current.val;
+  //         current = current.next;
+  //         return { value, done: false };
+  //       }
+  //       return { done: true };
+  //     },
+  //   };
+  // }
+  *[Symbol.iterator]() {
+    let current = this.#head;
+    while (current) {
+      yield current.val;
+      current = current.next;
+    }
+  }
 }
 
 // Your MyLinkedList object will be instantiated and called as such:
@@ -279,6 +299,12 @@ console.log(myLinkedList.get(1)); // return 3
 myLinkedList.addBeforeValue(2, 3);
 myLinkedList.addBeforeValue(4, 3);
 myLinkedList.addBeforeValue(0, 1); //0->1->2->4->3
+for (const element of myLinkedList) {
+  console.log("ele ", element);
+}
+console.log(Array.from(myLinkedList));
+myLinkedList.print(); // linked list becomes  0->1->2->4->3
+
 myLinkedList.deleteHead(); // delete 0
 myLinkedList.deleteTail();
 myLinkedList.deleteAtIndex(0);
