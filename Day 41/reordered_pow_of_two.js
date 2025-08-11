@@ -32,5 +32,6 @@ const reorderedPowerOf2 = function (n) {
 
 console.log(reorderedPowerOf2(1)); // true
 console.log(reorderedPowerOf2(10)); // false
+
 // Time Complexity: O(log n)
 // Space Complexity: O(log n)
