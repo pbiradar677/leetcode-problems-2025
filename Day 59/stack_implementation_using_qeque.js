@@ -92,6 +92,9 @@ MyStack.prototype.empty = function () {
 const myStack = new MyStack();
 myStack.push(1);
 myStack.push(2);
+myStack.push(3);
+myStack.push(4);
+myStack.push(5);
 console.log(myStack);
 console.log(myStack.top()); // return 2
 console.log(myStack.pop()); // return 2
